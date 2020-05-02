@@ -1,0 +1,20 @@
+{
+  "name": "social-media-dashboard-with-theme-switcher",
+  "version": "1.0.0",
+  "description": "![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass -w project/src/scss -o project/src/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dekxside/social-media-dashboard-with-theme-switcher.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dekxside/social-media-dashboard-with-theme-switcher/issues"
+  },
+  "homepage": "https://github.com/dekxside/social-media-dashboard-with-theme-switcher#readme"
+}

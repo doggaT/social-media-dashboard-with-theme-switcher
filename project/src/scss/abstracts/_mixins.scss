@@ -1,0 +1,25 @@
+@mixin Flex($justCont: center, $aligItem: center) {
+    display: flex;
+    justify-content: $justCont;
+    align-items: $aligItem;
+}
+
+@mixin Fupdate {
+    font-size: size(xs);
+    font-weight: 700;
+    margin-left: .5rem;
+}
+
+@mixin response($breakpoint) {
+    @if ($breakpoint == sm) {
+        @media (min-width: 600px) {
+            @content;
+        }
+    }
+
+    @if ($breakpoint == md) {
+        @media (min-width: 680px) {
+            @content;
+        }
+    }
+}

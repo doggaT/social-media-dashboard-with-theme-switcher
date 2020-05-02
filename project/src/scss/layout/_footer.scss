@@ -1,0 +1,12 @@
+.footer {
+    margin: 2rem 8%;
+    padding-top: 2rem;
+    text-align: center;
+    color: var(--text-color);
+
+    .attribution > a {
+        text-decoration: none;
+        font-size: size(xs) -.5rem;
+        color: var(--title-color);
+    }
+}

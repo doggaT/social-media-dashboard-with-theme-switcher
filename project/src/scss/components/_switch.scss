@@ -1,0 +1,30 @@
+.switch{
+    height: 2.4rem;
+    width: 5rem;
+    background: linear-gradient(to right, hsl(210, 78%, 56%) 0%, hsla(146, 68%, 55%, 100%));
+    border-radius: 35px;
+    position: relative;
+    cursor: pointer;
+    -webkit-appearance: none;
+    &::after {
+      top: .3rem;
+      left: .3rem;
+      content: "";
+      width: 1.8rem;
+      height: 1.8rem;
+      background-color: hsl(232, 19%, 15%);
+      position: absolute;
+      border-radius: 100%;
+      transition: .6s;
+    }
+    &:checked {
+      background: hsl(230, 22%, 74%);
+      &::after {
+        background-color: hsl(225, 100%, 98%);
+        transform: translateX(2.5rem);
+      }
+    }
+    &:focus {
+    outline-color: transparent;      
+  }
+}

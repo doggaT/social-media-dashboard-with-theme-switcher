@@ -1,0 +1,11 @@
+$font-sizes: (
+    xl: 6rem,
+    lg: 2.3rem,
+    md: 2rem,
+    sm: 1.4rem,
+    xs: 1.2rem
+);
+
+@function size($size) {
+    @return map-get($font-sizes, $size);
+}

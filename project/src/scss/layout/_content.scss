@@ -1,0 +1,10 @@
+.cards-wrapper {
+    max-width: 100%;
+    display: grid;
+    gap: 2rem;
+
+    @include response(md) {
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        
+    }
+}

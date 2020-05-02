@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  background-color: var(--bg); }
+
+.container {
+  margin: -4.8rem 8% 0 8%; }
+
+.switch {
+  height: 2.4rem;
+  width: 5rem;
+  background: linear-gradient(to right, #378fe6 0%, #3eda82);
+  border-radius: 35px;
+  position: relative;
+  cursor: pointer;
+  -webkit-appearance: none; }
+  .switch::after {
+    top: .3rem;
+    left: .3rem;
+    content: "";
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: #1f212e;
+    position: absolute;
+    border-radius: 100%;
+    transition: .6s; }
+  .switch:checked {
+    background: #aeb3cb; }
+    .switch:checked::after {
+      background-color: #f5f7ff;
+      transform: translateX(2.5rem); }
+  .switch:focus {
+    outline-color: transparent; }
+
+.card {
+  border-radius: .6rem;
+  padding: 1rem 4rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  background-color: var(--card-bg); }
+  .card:hover {
+    background-color: var(--hover); }
+  .card-header-wrapper {
+    padding: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .card-header-wrapper .card-name {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-left: 1rem;
+      color: var(--text-color); }
+  .card-fllwr {
+    font-size: 6rem;
+    color: var(--title-color); }
+  .card-fllwr-text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: .6rem;
+    color: var(--text-color); }
+  .card-footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3.2rem 0 1.2rem 0; }
+    .card-footer-wrapper .card-fllwr-update {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-left: .5rem; }
+
+.fllwr-up {
+  color: var(--up-fllwr); }
+
+.fllwr-down {
+  color: var(--down-fllwr); }
+
+.fb {
+  border-top: 0.5rem solid #1ca0f2; }
+
+.tt {
+  border-top: 0.5rem solid deepskyblue; }
+
+.ig {
+  padding: 0;
+  border-top: .5rem solid transparent;
+  border-radius: .6rem;
+  background-image: linear-gradient(var(--card-bg), var(--card-bg)), radial-gradient(circle at top left, #fdc468, #df4996);
+  background-origin: border-box;
+  background-clip: content-box, border-box; }
+  .ig:hover {
+    background-image: linear-gradient(var(--hover), var(--hover)), radial-gradient(circle at top left, #fdc468, #df4996); }
+
+.padd-adj {
+  padding: 1rem; }
+
+.yt {
+  border-top: 0.5rem solid #c4032a; }
+
+.overview-wrapper {
+  margin: 4rem 0; }
+  .overview-wrapper .overview-heading {
+    font-size: 2.3rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    color: var(--title-color); }
+
+.mini-card {
+  margin: 2rem 0;
+  max-width: 100%;
+  padding: 2rem 2rem 1rem;
+  border-radius: .6rem;
+  background-color: var(--card-bg); }
+  .mini-card:hover {
+    background-color: var(--hover); }
+  .mini-card-view-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .mini-card-view-wrapper .mini-card-heading {
+      font-size: 1.4rem;
+      letter-spacing: .1rem;
+      color: var(--text-color); }
+  .mini-card-update-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.2rem; }
+    .mini-card-update-wrapper .mini-card-fllwr {
+      font-size: 3.3rem;
+      font-weight: 700;
+      color: var(--title-color); }
+    .mini-card-update-wrapper .card-footer-wrapper .mini-card-fllwr-update {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-left: .5rem; }
+
+.header-bg {
+  width: 100vw;
+  height: 28rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: var(--top-bg); }
+  @media (min-width: 600px) {
+    .header-bg {
+      display: grid;
+      grid-template-columns: 8% 2fr 1fr 8%;
+      grid-template-rows: repeat(1fr) 10rem;
+      justify-content: space-between; } }
+  .header-bg .header-wrapper {
+    padding-top: 5rem;
+    margin: 0 5rem 0 8%; }
+    @media (min-width: 600px) {
+      .header-bg .header-wrapper {
+        grid-column: 2 / 3;
+        grid-row: 1 / 1;
+        margin: 0; } }
+    .header-bg .header-wrapper .header-title {
+      font-size: 2.3rem;
+      color: var(--title-color); }
+    .header-bg .header-wrapper .header-subtitle {
+      font-size: 1.4rem;
+      margin-top: .5rem;
+      color: var(--text-color); }
+  .header-bg .switcher-wrapper {
+    margin: 3rem 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.2rem;
+    border-top: 0.1rem solid var(--border-color); }
+    @media (min-width: 600px) {
+      .header-bg .switcher-wrapper {
+        border-top: transparent;
+        align-self: flex-start;
+        justify-self: flex-end;
+        grid-column: 3 / 4;
+        grid-row: 1 / 1;
+        margin: 4rem 0; } }
+    .header-bg .switcher-wrapper .switch-name {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--text-color); }
+      @media (min-width: 600px) {
+        .header-bg .switcher-wrapper .switch-name {
+          margin-right: 1rem; } }
+
+.footer {
+  margin: 2rem 8%;
+  padding-top: 2rem;
+  text-align: center;
+  color: var(--text-color); }
+  .footer .attribution > a {
+    text-decoration: none;
+    font-size: 1.2rem -0.5rem;
+    color: var(--title-color); }
+
+.cards-wrapper {
+  max-width: 100%;
+  display: grid;
+  gap: 2rem; }
+  @media (min-width: 680px) {
+    .cards-wrapper {
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); } }
+
+:root {
+  --bg: hsl(230, 17%, 14%);
+  --top-bg: hsl(232, 19%, 15%);
+  --title-color: hsl(0, 0%, 100%);
+  --text-color: hsl(228, 34%, 66%);
+  --border-color: hsl(0, 0%, 100%);
+  --card-bg: hsl(228, 28%, 20%);
+  --hover: #333A56;
+  --up-fllwr: hsl(163, 72%, 41%);
+  --down-fllwr: hsl(356, 69%, 56%); }
+
+.lightMode {
+  --bg: hsl(0, 0%, 100%);
+  --top-bg: hsl(225, 100%, 98%);
+  --title-color: hsl(230, 17%, 14%);
+  --text-color: hsl(228, 12%, 44%);
+  --border-color: hsl(228, 12%, 44%);
+  --card-bg: hsl(227, 47%, 96%);
+  --hover: #E1E3F0; }

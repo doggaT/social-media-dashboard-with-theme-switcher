@@ -1,0 +1,378 @@
+//====================================================
+// general
+//====================================================
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.cont-pos {
+    width: 80vw;
+    padding-top: 3rem;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.wrapper {
+    align-self: center;
+}            
+
+//====================================================
+// background
+//====================================================
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.top-bg {
+    width: 100vw;
+    height: 15rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+//====================================================
+// background themes
+//====================================================
+.background-dark {
+    background: hsl(230, 17%, 14%);
+}
+
+.background-white {
+    background: hsl(0, 0%, 100%);
+}
+
+.top-bg-dark {
+    background: hsl(232, 19%, 15%);
+}
+
+.top-bg-white {
+    background: hsl(225, 100%, 98%);
+}
+
+//====================================================
+// images
+//====================================================
+img {
+    vertical-align: middle;
+}
+
+.icon {
+    margin-right: .4rem;
+}
+
+.arrow {
+    margin-right: .2rem;
+}
+
+//====================================================
+// cards
+//====================================================
+.card-wrapper {
+    margin: -3rem auto 0 auto;
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    margin: 1rem;
+    flex: 1 0 15rem;
+    
+    height: 15rem;
+    border-radius: 2%;
+    text-align: center;
+}
+
+.card-name {
+    padding: .8rem;
+    font-size: .9rem;
+    font-weight: 900;
+}
+
+.card-fllwr-nbr {
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.card-fllw-text {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: .3em;
+    margin-top: 0;
+}
+
+.fllw-update {
+    font-weight: 900;
+    font-size: .75em;
+    padding: .9rem;
+}
+
+#fb {
+    border-top: .25rem solid hsl(203, 89%, 53%);
+}
+
+#tw {
+    border-top: .25rem solid hsl(195, 100%, 50%);
+}
+
+.ig {
+    border-top: .25rem solid transparent;
+    border-radius: 2%;
+}
+
+#ig-dark {
+    background-image: linear-gradient(hsl(228, 28%, 20%)), 
+    radial-gradient(circle at top left, hsl(37, 97%, 70%), hsla(329, 70%, 58%, 100%));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+#ig-white {
+    background-image: linear-gradient(hsl(227, 47%, 96%)), 
+    radial-gradient(circle at top left, hsl(37, 97%, 70%), hsla(329, 70%, 58%, 100%));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+#yt {
+    border-top: .25rem solid hsl(348, 97%, 39%);
+}
+
+//====================================================
+// card themes
+//====================================================
+.card-dark {
+    background: hsl(228, 28%, 20%);
+}
+
+.card-white {
+    background: hsl(227, 47%, 96%);
+}
+
+.card-name-dark {
+    color: hsl(228, 34%, 66%);
+}
+
+.card-name-white {
+    color: hsl(228, 12%, 44%);
+}
+
+.card-fllwr-nbr-dark {
+    color: hsl(0, 0%, 100%);
+}
+
+.card-fllwr-nbr-white {
+    color: hsl(230, 17%, 14%);
+}
+
+.card-fllw-text-dark {
+    color: hsl(228, 34%, 66%);
+}
+
+.card-fllw-text-white {
+    color: hsl(228, 12%, 44%);
+}
+
+//====================================================
+// update states
+//====================================================
+.fllw-update-up {
+    color: hsl(163, 72%, 41%);
+}
+
+.fllw-update-down {
+    color: hsl(356, 69%, 56%);
+}
+
+//====================================================
+// small cards
+//====================================================
+.small-container {
+    width: 80%;
+    margin: auto;
+}
+
+.small-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.small-card {
+    flex-basis: 16rem;
+    border-radius: 2%;
+    margin-bottom: 2rem;
+    
+
+    background: hsl(227, 47%, 96%);
+}
+
+.small-card-title {
+    margin: 1.4rem;
+    font-size: .9rem;
+    font-weight: 900;
+    
+}
+
+.small-card-sub {
+    margin: 0 1.4rem;
+    justify-content: space-between;
+    align-items: baseline;
+    
+}
+
+.small-card-nmbr {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: .5rem 0 1rem 0;
+}
+
+.small-card-update {
+    font-size: .8rem;
+    font-weight: 900;
+}
+
+.line-wrapper {
+    display: flex;
+}
+
+.small-icon {
+    margin-left: auto;
+}
+
+
+//====================================================
+// small cards themes
+//====================================================
+.small-card-dark {
+    background:hsl(228, 28%, 20%);
+}
+
+.small-card-white {
+    background: hsl(227, 47%, 96%);
+}
+
+.small-t-dark {
+    color: hsl(228, 34%, 66%);
+}
+
+.small-nmbr-dark {
+    color: hsl(0, 0%, 100%);
+}
+
+//====================================================
+// typography
+//====================================================
+.title {
+    font-size: 1.55em;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.t-dark {
+    color: hsl(0, 0%, 100%);
+}
+
+.t-white {
+    color: hsl(230, 17%, 14%);
+}
+
+.sub-title {
+    font-size: .8em;    
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.sub-dark {
+    color: hsl(228, 34%, 66%);
+}
+
+.sub-white {
+    color: hsl(228, 12%, 44%);
+}
+
+
+
+
+
+
+
+.line {
+    border-top: 1.6px solid  hsl(230, 22%, 74%);
+}
+
+//====================================================
+// toggle switch
+//====================================================
+.switch{
+    vertical-align: middle;
+    height: 1.2rem;
+    width: 2.5rem;
+    background: linear-gradient(to right, hsl(210, 78%, 56%) 0%, hsla(146, 68%, 55%, 100%));
+    border-radius: 35px;
+    position: relative;
+    cursor: pointer;
+    -webkit-appearance: none;
+    &::after {
+      top: .2em;
+      left: .19em;
+      content: "";
+      width: 0.9rem;
+      height: 0.9rem;
+      background-color: hsl(232, 19%, 15%);
+      position: absolute;
+      border-radius: 100%;
+      transition: .6s;
+    }
+    &:checked {
+      background: hsl(230, 22%, 74%);
+      &::after {
+        background-color: hsl(225, 100%, 98%);
+        transform: translateX(1.3rem);
+      }
+    }
+    &:focus {
+    outline-color: transparent;      
+  }
+}
+
+//====================================================
+// footer
+//====================================================
+.attribution-dark { 
+    font-size: 11px; text-align: center;
+    margin: 1rem;
+}
+
+.attribution-dark {
+    color: hsl(228, 34%, 66%);
+}
+
+.attribution-white {
+    color: hsl(228, 12%, 44%);
+}
+
+.attribution-dark a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+.attribution-white a { 
+    color: hsl(230, 17%, 14%);
+    text-decoration: none; 
+}

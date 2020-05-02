@@ -2,88 +2,222 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" type="text/css">
-  
-  <title>Frontend Mentor | Social Media Dashboard with Theme Switcher Master</title>
+  <title>Frontend Mentor | Social Media Dashboard with Theme Switcher</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link rel="stylesheet" href="../src/css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 </head>
 <body>
+  <!-- header -->
+  <header class="header-bg">
+    <div class="header-wrapper">
+      <h1 class="header-title">Social Media Dashboard</h1>
+      <h2 class="header-subtitle">Total Followers: 23,004</h2>
+    </div>
+    <div class="switcher-wrapper">
+      <label class="switch-name">Dark Mode</label>
+      <input type="checkbox" class="switch" id="light-mode-switcher">
+    </div>
+  </header>
+  <!-- end of header -->
 
-  Social Media Dashboard
-  Total Followers: 23,004
+  <div class="container">
 
-  Dark Mode
+    <!-- cards -->
+    <section class="cards-wrapper">
+      <div class="card fb" id="">
+        <div class="card-header-wrapper">
+          <img src="../images/icon-facebook.svg">
+          <h2 class="card-name">@nathanf</h2>
+        </div>
+        <h3 class="card-fllwr">1987</h3>
+        <p class="card-fllwr-text">Followers</p>
+        <div class="card-footer-wrapper">
+          <img src="../images/icon-up.svg">
+          <h4 class="card-fllwr-update fllwr-up">12 Today</h4>
+        </div>
+      </div>
 
+      <div class="card tt" id="">
+        <div class="card-header-wrapper">
+          <img src="../images/icon-twitter.svg">
+          <h2 class="card-name">@nathanf</h2>
+        </div>
+        <h3 class="card-fllwr">1044</h3>
+        <p class="card-fllwr-text">Followers</p>
+        <div class="card-footer-wrapper">
+          <img src="../images/icon-up.svg">
+          <h4 class="card-fllwr-update fllwr-up">99 Today</h4>
+        </div>
+      </div>
+
+      <div class="card ig" id="">
+        <div class="padd-adj">
+          <div class="card-header-wrapper">
+            <img src="../images/icon-instagram.svg">
+            <h2 class="card-name">@realnathanf</h2>
+          </div>
+          <h3 class="card-fllwr">11k</h3>
+          <p class="card-fllwr-text">Followers</p>
+          <div class="card-footer-wrapper">
+            <img src="../images/icon-up.svg">
+            <h4 class="card-fllwr-update fllwr-up">1099 Today</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="card yt" id="">
+        <div class="card-header-wrapper">
+          <img src="../images/icon-youtube.svg">
+          <h2 class="card-name">Nathan F.</h2>
+        </div>
+        <h3 class="card-fllwr">8239</h3>
+        <p class="card-fllwr-text">Subscribers</p>
+        <div class="card-footer-wrapper">
+          <img src="../images/icon-down.svg">
+          <h4 class="card-fllwr-update fllwr-down">144 Today</h4>
+        </div>
+      </div>
+    </section>
+    <!-- end of cards -->
   
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <!-- overview -->
+    <section class="overview-wrapper">
+      <h2 class="overview-heading">Overview - Today</h2>
+      
+      <div class="cards-wrapper">
+        
+        <div class="mini-card">
+          <div class="mini-card-view-wrapper">
+            <h3 class="mini-card-heading">Page Views</h3>
+            <img src="../images/icon-facebook.svg">
+          </div>
+          <div class="mini-card-update-wrapper">
+            <h3 class="mini-card-fllwr">87</h3>
+            <div class="card-footer-wrapper">
+              <img src="../images/icon-up.svg">
+              <h4 class="mini-card-fllwr-update fllwr-up">3%</h4>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mini-card">
+          <div class="mini-card-view-wrapper">
+            <h3 class="mini-card-heading">Likes</h3>
+            <img src="../images/icon-facebook.svg">
+          </div>
+          <div class="mini-card-update-wrapper">
+            <h3 class="mini-card-fllwr">52</h3>
+            <div class="card-footer-wrapper">
+              <img src="../images/icon-down.svg">
+              <h4 class="mini-card-fllwr-update fllwr-down">2%</h4>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mini-card">
+          <div class="mini-card-view-wrapper">
+            <h3 class="mini-card-heading">Likes</h3>
+            <img src="../images/icon-instagram.svg">
+          </div>
+          <div class="mini-card-update-wrapper">
+            <h3 class="mini-card-fllwr">5462</h3>
+            <div class="card-footer-wrapper">
+              <img src="../images/icon-up.svg">
+              <h4 class="mini-card-fllwr-update fllwr-up">2257%</h4>
+            </div>
+          </div>
+        </div>
+      
+        <div class="mini-card">
+          <div class="mini-card-view-wrapper">
+            <h3 class="mini-card-heading">Profile Views</h3>
+            <img src="../images/icon-instagram.svg">
+          </div>
+          <div class="mini-card-update-wrapper">
+            <h3 class="mini-card-fllwr">52k</h3>
+            <div class="card-footer-wrapper">
+              <img src="../images/icon-up.svg">
+              <h4 class="mini-card-fllwr-update fllwr-up">1375%</h4>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mini-card">
+          <div class="mini-card-view-wrapper">
+            <h3 class="mini-card-heading">Retweets</h3>
+            <img src="../images/icon-twitter.svg">
+          </div>
+          <div class="mini-card-update-wrapper">
+            <h3 class="mini-card-fllwr">117</h3>
+            <div class="card-footer-wrapper">
+              <img src="../images/icon-up.svg">
+              <h4 class="mini-card-fllwr-update fllwr-up">303%</h4>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mini-card">
+          <div class="mini-card-view-wrapper">
+            <h3 class="mini-card-heading">Likes</h3>
+            <img src="../images/icon-twitter.svg">
+          </div>
+          <div class="mini-card-update-wrapper">
+            <h3 class="mini-card-fllwr">507</h3>
+            <div class="card-footer-wrapper">
+              <img src="../images/icon-up.svg">
+              <h4 class="mini-card-fllwr-update fllwr-up">553%</h4>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mini-card">
+          <div class="mini-card-view-wrapper">
+            <h3 class="mini-card-heading">Likes</h3>
+            <img src="../images/icon-youtube.svg">
+          </div>
+          <div class="mini-card-update-wrapper">
+            <h3 class="mini-card-fllwr">107</h3>
+            <div class="card-footer-wrapper">
+              <img src="../images/icon-down.svg">
+              <h4 class="mini-card-fllwr-update fllwr-down">19%</h4>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mini-card">
+          <div class="mini-card-view-wrapper">
+            <h3 class="mini-card-heading">Total Views</h3>
+            <img src="../images/icon-youtube.svg">
+          </div>
+          <div class="mini-card-update-wrapper">
+            <h3 class="mini-card-fllwr">1407</h3>
+            <div class="card-footer-wrapper">
+              <img src="../images/icon-down.svg">
+              <h4 class="mini-card-fllwr-update fllwr-down">12%</h4>
+             </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <!-- end of overview -->
   </div>
+  
+  <!-- footer -->
+  <footer class=" footer">
+      <p class="attribution">Challenge by 
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by 
+        <a href="#">Douglas Tiepolo</a>.
+      </p>
+  </footer>
+  <!-- end of footer -->
+  <script src="../src/js/themeSwitcher.js"></script>
 </body>
 </html>
