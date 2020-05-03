@@ -4,7 +4,7 @@
   "description": "![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "watch": "node-sass -w project/src/scss -o project/src/css"
+    "watch": "node-sass -w scss -o css"
   },
   "repository": {
     "type": "git",

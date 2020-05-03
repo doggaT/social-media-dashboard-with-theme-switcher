@@ -154,7 +154,6 @@ body {
     .header-bg {
       display: grid;
       grid-template-columns: 8% 2fr 1fr 8%;
-      grid-template-rows: repeat(1fr) 10rem;
       justify-content: space-between; } }
   .header-bg .header-wrapper {
     padding-top: 5rem;
@@ -162,7 +161,6 @@ body {
     @media (min-width: 600px) {
       .header-bg .header-wrapper {
         grid-column: 2 / 3;
-        grid-row: 1 / 1;
         margin: 0; } }
     .header-bg .header-wrapper .header-title {
       font-size: 2.3rem;
@@ -184,7 +182,6 @@ body {
         align-self: flex-start;
         justify-self: flex-end;
         grid-column: 3 / 4;
-        grid-row: 1 / 1;
         margin: 4rem 0; } }
     .header-bg .switcher-wrapper .switch-name {
       font-size: 1.4rem;
