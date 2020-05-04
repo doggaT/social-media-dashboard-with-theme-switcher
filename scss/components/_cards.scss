@@ -8,8 +8,8 @@
 
     &:hover {
         background-color: var(--hover);
-    }
-    
+    } 
+     
 
     &-header-wrapper {
         padding: 2.2rem;
@@ -75,7 +75,7 @@
     // transition: all .4s;
 
     &:hover {
-        background-image: linear-gradient(var(--hover), var(--hover)), radial-gradient(circle at top left, hsl(37, 97%, 70%), hsla(329, 70%, 58%, 100%));
+    background-image: linear-gradient(var(--hover), var(--hover)), radial-gradient(circle at top left, hsl(37, 97%, 70%), hsla(329, 70%, 58%, 100%));
     }
 }
 

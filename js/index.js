@@ -1,3 +1,4 @@
+// Theme Switcher
 let lightMode = localStorage.getItem("lightMode");
 const lightModeSwitcher = document.querySelector('#light-mode-switcher');
 
@@ -23,4 +24,3 @@ lightModeSwitcher.addEventListener("click", () => {
         disableLightMode();
     }
 });
-
